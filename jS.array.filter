@@ -2,10 +2,10 @@
 
 
 
-SYNTAX :-
-filter((element, index, array)
+//SYNTAX :-
+//filter((element, index, array)
 
-eg:-
+//eg:-
 1)const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
  const result = words.filter(word => word.length > 6);
  console.log(result);
@@ -30,12 +30,12 @@ function isPrime(num) {
 console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
 
 
-4)Following example uses filter() to filter array content based on search criteria.
+//4)Following example uses filter() to filter array content based on search criteria.
 
 let fruits = ['apple', 'banana', 'grapes', 'mango', 'orange']
 
-/**
- * Filter array items based on search criteria (query)
+/*
+  Filter array items based on search criteria (query)
  */
 function filterItems(arr, query) {
   return arr.filter(function(el) {
