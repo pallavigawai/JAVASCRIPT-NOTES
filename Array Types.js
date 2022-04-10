@@ -146,11 +146,154 @@ array.find(function(value, index) {
 });
                                                       
 
+                                           /********* ARRAY charAt() ********* /
+
+The charAt() method returns the character at the specified index in a string.
+* SYNTAX:-
+  str.charAt(index)
+* charAt() Return Value
+ Returns a string representing the character at the specified index.
+*/
+// Example 1: An Integer Index Value in charAt() Method
+// string declaration
+const string= "Hello World!";
+// using charAt() method 
+let index1= string.charAt(1);
+console.log("Character at index 1 is " + index1);
+
+// Example 2: A Non-integer Index Value in charAt() Method
+ const string= "Hello World";
+// using charAt() at index 6
+ let result2 = string.charAt(6);
+ console.log("Character at index 6 is " + result2);
+// using charAt() at index 6.5
+ let result1 = string.charAt(6.5); 
+ console.log("Character at index 6.5 is " + result1);
+/*OUTPUT:-
+  Character at index 6 is W
+  Character at index 6.5 is W
+since the non-integer index value 6.5 is converted to integer index 6.
+*/
+//Example 3: Without passing parameter in charAt() method
+let sentence = "Happy Birthday to you!";
+// passing empty parameter in charAt() 
+let index4 = sentence.charAt();
+console.log("Character at index 0 is  " + index4);
+//OUTPUT:-
+//Character at index 0 is  H
+  
+// Example 4: Index Value Out of Range in charAt() Method
+let sentence = "Happy Birthday to you!";
+// using index out of range in charAt()
+let index3 = sentence.charAt(100);
+console.log("Character at index 100 is: " + index3);
+//Character at index 100 is:
+//In the above program, 100 index value is out of range, so the charAt() method returns an empty string.
+
+                               /******* ARRAY indexOF() ******/
+                               
+  The string indexOf() method returns the index of the first occurence of the substring in a string.     
+  const message = "JavaScript is not Java";
+
+// returns index of 'v' in first occurrence of 'va'
+const index = message.indexOf("va");
+console.log('index: ' + index);  // index: 2
+* indexOf() Syntax:-
+  str.indexOf(searchValue, fromIndex)
+
+* Return Value
+  Returns the first index of the value in the string if it is present at least once.
+  Returns -1 if the value is not found in the string.
+*  For empty string searchValue and fromIndex less than the string's length, indexOf returns the value the same as fromIndex.
+* Similarly, for empty string searchValue and fromIndex greater than the string's length, indexOf returns the string's length.
+
+var str = "JavaScript is the world's most misunderstood programming language.";
+// indexOf() returns the first occurance
+var index1 = str.indexOf("language");
+console.log(index1); // 57
+
+var index2 = str.indexOf("p");
+console.log(index2); // 8
+
+// second argument specifies the search's start index
+var index3 = str.indexOf("p", 9);
+console.log(index3); // 45
+
+// indexOf returns -1 if not found
+var index4 = str.indexOf("Python");
+console.log(index4); // -1
+
+//Example 2: Finding All the Occurrences of an Element
+function findAllIndex(string, value) {
+  indices = [];
+  var currentIndex = string.indexOf(value);
+  while (currentIndex != -1) {
+    indices.push(currentIndex);
+    currentIndex = string.indexOf(value, currentIndex + value.length);
+  }
+  return indices;
+}
+
+var str = "JavaScript is as related to Java as Carpenter is to Carpet.";
+
+var occurance1 = findAllIndex(str, "J");
+console.log(occurance1); // [ 0, 28 ]
+
+var occurance2 = findAllIndex(str, "Carpet");
+console.log(occurance2); // [ 52 ]
+
+var occurance3 = findAllIndex(str, "x");
+console.log(occurance3); // []
 
 
+                              /******* ARRAY lastIndexOF() ******* /
+                              
+The JavaScript Array lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.
+SYNTAX:-
+  arr.lastIndexOf(searchElement, fromIndex)
+* fromIndex (optional) - The index to start searching backwards. By default it is array.length - 1.
+Note: lastIndexOf() compares searchElement to elements of the Array using strict equality (similar to triple-equals operator or ===).
+*/
+//Example 1: Using lastIndexOf() method
+var priceList = [10, 8, 2, 31, 10, 1, 65];
 
+// lastIndexOf() returns the last occurance
+var index1 = priceList.lastIndexOf(31);
+console.log(index1); // 3
 
+var index2 = priceList.lastIndexOf(10);
+console.log(index2); // 4
 
+// second argument specifies the backward search's start index
+var index3 = priceList.lastIndexOf(10, 3);
+console.log(index3); // 0
 
+// lastIndexOf returns -1 if not found
+var index4 = priceList.lastIndexOf(69.5);
+console.log(index4); // -1
 
+//Example 2: Finding All the Occurrences of an Element
+function findAllIndex(array, element) {
+  indices = [];
+  var currentIndex = array.lastIndexOf(element);
+  while (currentIndex != -1) {
+    indices.push(currentIndex);
+    if (currentIndex > 0) {
+      currentIndex = array.lastIndexOf(element, currentIndex - 1);
+    } else {
+      currentIndex = -1;
+    }
+  }
+  return indices;
+}
+
+var priceList = [10, 8, 2, 31, 10, 1, 65, 10];
+var occurance1 = findAllIndex(priceList, 10);
+console.log(occurance1); // [ 7, 4, 0 ]
+
+var occurance2 = findAllIndex(priceList, 8);
+console.log(occurance2); // [ 1 ]
+
+var occurance3 = findAllIndex(priceList, 9);
+console.log(occurance3); // []
                                                          
