@@ -14,6 +14,7 @@ SYNTAX:-
    you're not returning a value from the callback.
 
 */
+
 const persons = [
   {firstname : "Malcom", lastname: "Reynolds"},
   {firstname : "Kaylee", lastname: "Frye"},
