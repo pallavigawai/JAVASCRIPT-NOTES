@@ -1,4 +1,4 @@
-                            / ***** JavaScript Objects ****** /
+                            /***** JavaScript Objects ******/
 JavaScript object is a non-primitive data-type that allows you to store multiple collections of data.
 // object
 const student = {
