@@ -13,7 +13,7 @@ function sum(x, y) {
 # The function will not be executed, but only provided. Only with its call the function is executed. Every instruction in the function block is executed in order.
 
  */
- ********** FUNCTION EXPRESSION  **********
+ /********** FUNCTION EXPRESSION  **********/
  function felicitationMessage(data) {
     const message = `Congrats! ${data.name} for completing ${data.degree}`;
     console.log(message)
