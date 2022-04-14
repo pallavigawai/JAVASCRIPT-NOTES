@@ -26,5 +26,4 @@ your time with this, and check part of the solution if necessary.
 4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If 
 not, log 'Portugal does not meet your criteria :('
 */
-
-do it your own
+// do it your own
