@@ -35,7 +35,7 @@ function myFunction(num) {
 // 650,440,120,40
 
 
-                                                  ARRAY JOIN
+                                                  // ARRAY JOIN
                                                   
 /*
 * creates and returns a new string by concatenating all of the elements in an array                                                  
@@ -63,7 +63,7 @@ a.join(' + '); // 'Wind + Water + Fire'
 a.join('');    // 'WindWaterFire'
 
 
-                                                      ARRAY SPLICE
+                                                     //  ARRAY SPLICE
  /*                                                     
  The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To access part of an array without modifying it, see slice().
  
@@ -91,7 +91,7 @@ let removed = myFish.splice(2, 2)
 // removed is ["blue", "trumpet"]
    
 
-                                                         ARRAY SLICE 
+                                                        // ARRAY SLICE 
  /*                                                        
 a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
  SYNTAX:-
@@ -104,7 +104,7 @@ a portion of an array into a new array object selected from start to end (end no
   */
                                                          
                                                          
-                                                         ARRAY FIND
+                                                        // ARRAY FIND
                                                          
   /*
    The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.                                                      
