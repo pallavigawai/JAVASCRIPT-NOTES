@@ -1,21 +1,22 @@
-/****************************** Array filter ******************************/
+/****************************** Array filter ****************************** /
 
 
 
-//SYNTAX :-
-//filter((element, index, array)
-
-//eg:-
+SYNTAX :-
+filter((element, index, array)
+eg:-
+*/
 1)const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
  const result = words.filter(word => word.length > 6);
  console.log(result);
  // expected output: Array ["exuberant", "destruction", "present"]
 
 
-2)onst numbers = [1,2,3,4,5,6];
+2)const numbers = [1,2,3,4,5,6];
  const filtered =numbers.filter((num) => num > 4); 
- console.log(filtered)
-
+ console.log(filtered);
+ // expected output: [5,6]
+// Note: Here we used Arrow function syntax:- variable.filter((param1, paramN) => expression)
 
 3) const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 function isPrime(num) {
@@ -26,9 +27,8 @@ function isPrime(num) {
   }
   return num > 1;
 }
-
 console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
-
+// Note: A prime number is a natural number greater than 1, which is only divisible by 1 and itself. First few prime numbers are : 2 3 5 7 11 13 17 19 23 
 
 //4)Following example uses filter() to filter array content based on search criteria.
 
@@ -40,7 +40,8 @@ let fruits = ['apple', 'banana', 'grapes', 'mango', 'orange']
 function filterItems(arr, query) {
   return arr.filter(function(el) {
     return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
-    //const filterItems = (arr, query) => {
+                    // OR
+    const filterItems = (arr, query) => {
       return arr.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) !== -1)
   })
 }
