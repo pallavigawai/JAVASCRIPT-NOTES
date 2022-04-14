@@ -1,13 +1,13 @@
 /*
 SYNTAX:-
-if (condition1)
-  statement1
-else if (condition2)
-  statement2
-else if (condition3)
-  statement3
+if (condition1){
+  statement1}
+else if (condition2){
+  statement2}
+else if (condition3){
+  statement3}
 ...
-else
+else{}
 
 # Declare a variable 'numNeighbours' based on a prompt input like this: 
 prompt('How many neighbour countries does your country 
