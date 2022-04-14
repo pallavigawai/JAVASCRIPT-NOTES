@@ -1,5 +1,5 @@
-/*************** ARRAY TYPES ****************/
-/*
+/*************** ARRAY TYPES **************** /
+
                                                                  ARRAY MAP:-
 * map() creates a new array from calling a function for every array element.
 * map() calls a function once for each element in an array.
@@ -8,10 +8,10 @@
 
 SYNTAX:-
  map((element, index, array) => { /* ... */ })
- 
-# You shouldn't be using map if:
-   you're not using the array it returns; and/or
-   you're not returning a value from the callback.
+/* 
+You shouldn't be using map if:
+you're not using the array it returns; and/or
+you're not returning a value from the callback.
 
 */
 
@@ -111,6 +111,7 @@ a portion of an array into a new array object selected from start to end (end no
                                                         
   SYNTAX:
   find((element, index, array) => { /* ... */ } )
+  /*
   # If you need the index of the found element in the array, use findIndex().                                                      
   # If you need to find if a value exists in an array, use Array.includes(). Again, it checks each element for equality with the value instead of using a testing function.
   */   
@@ -192,7 +193,7 @@ console.log("Character at index 100 is: " + index3);
 //In the above program, 100 index value is out of range, so the charAt() method returns an empty string.
 
                                /******* ARRAY indexOF() ******/
-                               
+  /*                             
   The string indexOf() method returns the index of the first occurence of the substring in a string.     
   const message = "JavaScript is not Java";
 
@@ -207,7 +208,7 @@ console.log('index: ' + index);  // index: 2
   Returns -1 if the value is not found in the string.
 *  For empty string searchValue and fromIndex less than the string's length, indexOf returns the value the same as fromIndex.
 * Similarly, for empty string searchValue and fromIndex greater than the string's length, indexOf returns the string's length.
-
+*/
 var str = "JavaScript is the world's most misunderstood programming language.";
 // indexOf() returns the first occurance
 var index1 = str.indexOf("language");
