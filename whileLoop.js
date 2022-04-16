@@ -70,3 +70,21 @@ str = str + ' '
 }
 spaces(2);
 // spaces gap will increase as number(n) increases.
+
+// Infinite while Loop
+// If the condition of a loop is always true, the loop runs for infinite times (until the memory is full). For example,
+
+// infinite while loop
+while(true){
+    // body of loop
+}
+// Here is an example of an infinite do...while loop.
+
+
+
+                                                                  // infinite do...while loop
+const count = 1;
+do {
+   // body of loop
+} while(count == 1)
+// In the above programs, the condition is always true. Hence, the loop body will run for infinite times.
