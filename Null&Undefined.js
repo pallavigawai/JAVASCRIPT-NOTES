@@ -22,7 +22,7 @@ return null;
 }
 return string.substr(onlyComment+2).trim();
 }
-                        OR
+                       // OR
                         
 function cutComment (line) {
 let a = line.indexOf('//'); 
