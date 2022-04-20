@@ -1,4 +1,4 @@
-                                         /******** Number.parseInt() ********
+/******** Number.parseInt() ********
 The Number.parseInt() method parses a string argument and returns an integer of the specified radix or base.
 Syntax
 Number.parseInt(string, radix)
@@ -29,21 +29,23 @@ isNaN(' ');       // false: a string with spaces is converted to 0 which is not 
   
   
   */
-  const isNaN = function(value) {
-    const n = Number(value);
-    return n !== n;
+const isNaN = function (value) {
+  const n = Number(value);
+  return n !== n;
 };
 
 // Write a function add that takes a string with a summation task and returns its result as a number. Two natural numbers should be added. The summation task is a string of the form '102+17'.
 //Example: add('102+17') should return 119.
-function add(a){
-let num1 = parseInt(a,10);
-let index  = a.indexOf('+');
-let str = a.substr(index);
-let num2 = parseInt(str,10);
-console.log(str);
-return num1+num2;
+function add(a) {
+  let num1 = parseInt(a, 10);
+  let index = a.indexOf("+");
+  let str = a.substr(index);
+  let num2 = parseInt(str, 10);
+  console.log(str);
+  return num1 + num2;
+  console.log(num1);
 }
+add("10+100");
 /*
 test passed by:-
 *add is a function.

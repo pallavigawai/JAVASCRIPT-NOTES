@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script src="./script.js"></script>
+    </body>
+</html>
+
+
 /******************************** Array.Concat() ********************************/
 
 //The concat() method is used to merge two or more array.
