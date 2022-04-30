@@ -1,9 +1,14 @@
 /************* WHAT YOU SHOULD KNOW ABOUT JAVASCRIPT *************** /
 
  WHAT IS JAVASCRIPT?
-* High level, interpreted Programmming language
+* High level, Object Oriented, Multi-Paradigm interpreted Programmming language.
+* Also Dynamic Single Threaded, Non-Blocking event loop Concurrency Model.
 * Conforms to the ECMAScript specification
 * Runs on the client/browser as well as on the server (Node.js)
+
+# Paradidm - an Approch of structuring coding, wchich will direct your coding style & technique.
+Low Level Languages : - C lang - developer has to manage resources manually
+High level :- JS - everythings happens automatically.
 
  WHY LEARN JAVASCRIPT?
 * It is programming language of the browser
