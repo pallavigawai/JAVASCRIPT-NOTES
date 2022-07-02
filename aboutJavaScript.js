@@ -1,7 +1,7 @@
-/************* WHAT YOU SHOULD KNOW ABOUT JAVASCRIPT *************** /
+  /************* WHAT YOU SHOULD KNOW ABOUT JAVASCRIPT *************** /
 
  WHAT IS JAVASCRIPT?
-* High level, interpreted Programmming language
+ -* High level, interpreted Programmming language
 * Conforms to the ECMAScript specification
 * Runs on the client/browser as well as on the server (Node.js)
 
