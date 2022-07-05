@@ -15,12 +15,21 @@ function sum(x, y) {
 NOTE:- When a value is passed when declaring a function, it is called PARAMETER, 
         And when the function is called, the value passed is called ARGUMENT.
 
- */
-/********** FUNCTION EXPRESSION  **********/
-//Function Expressions
 
-// program to find the square of a number
-// function is declared inside the variable
+/********** FUNCTION EXPRESSION  ********** /
+
+Function Expressions
+ * A function Expression is similar to a function declaration without the function name.
+ * Function expressions can be stored in a variable assignment.
+ SYNTAX:-
+ let variableName = function(paramA, paramB) {
+    // Set of statements
+}
+
+ program to find the square of a number
+ function is declared inside the variable
+*/
+
 let x = function (num) { return num * num };
 console.log(x(4));
 
