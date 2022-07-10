@@ -13,16 +13,16 @@ const [a, b, ...[c, d]] = array;
 */
 
 // EXAMPLE 1:-
-let a, b, rest;
-[a, b] = [10, 20];
+let p, q, rest;
+[p, q] = [10, 20];
 
-console.log(a);
+console.log(p);
 // expected output: 10
 
-console.log(b);
+console.log(q);
 // expected output: 20
 
-[a, b, ...rest] = [10, 20, 30, 40, 50];
+[p, q, ...rest] = [10, 20, 30, 40, 50];
 
 console.log(rest);
 // expected output: Array [30,40,50]
@@ -35,12 +35,12 @@ console.log(z); // 2
 // Similarly, you can destructure arrays on the left-hand side of the assignment.
 
 // EXAMPLE 3:-
-const foo = ['one', 'two', 'three'];
+const num = ['one', 'two', 'three'];
 
-const [red, yellow, green] = foo;
-console.log(red); // "one"
-console.log(yellow); // "two"
-console.log(green); // "three"
+const [violet, white, black] = num;
+console.log(violet); // "one"
+console.log(white); // "two"
+console.log(black); // "three"
 
 // In an array destructuring from an array of length N specified on the right-hand side of the assignment, if the number of variables specified on the left-hand side of the assignment is greater than N,only the first N variables are assigned values. The values of the remaining variables will be undefined.
 const foo = ['one', 'two'];
@@ -56,20 +56,20 @@ console.log(blue);  //undefined
 
 * A variable can be assigned a default, in the case that the value unpacked from the array is undefined.
 */
-let a, b;
-[a=5, b=7] = [1];
-console.log(a); // 1
-console.log(b); // 7
+let ab, bc;
+[ab=5, bc=7] = [1];
+console.log(ab); // 1
+console.log(bc); // 7
 
 /*********************** SWAPPING VARIABLES ************************* /
 * Without destructuring assignment, swapping two values requires a temporary variable.
 */
-let a = 1;
-let b = 3;
+let m = 1;
+let n = 3;
 
-[a, b] = [b, a];
-console.log(a); // 3
-console.log(b); // 1
+[m,n] = [n,m];
+console.log(m); // 3
+console.log(n); // 1
 
 const arr = [1,2,3];
 [arr[2], arr[1]] = [arr[1], arr[2]];
@@ -83,7 +83,7 @@ function f() {
   return [1, 2];
 }
 // You can ignore return values that you're not interested in:
-let a, b;
+const a, b ;;
 [a, b] = f();
 console.log(a); // 1
 console.log(b); // 2
@@ -91,11 +91,11 @@ console.log(b); // 2
 function f() {
   return [1, 2, 3];
 }
-const [a, , b] = f();
-console.log(a); // 1
-console.log(b); // 3
-
-const [c] = f();
+const [c, , d] = f();
 console.log(c); // 1
+console.log(d); // 3
+
+const [e] = f();
+console.log(e); // 1
 // You can also ignore all returned values: [,,] = f();
 
