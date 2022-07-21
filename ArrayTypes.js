@@ -7,8 +7,8 @@
 * map() does not change the original array.
 
 SYNTAX:-
- map((element, index, array) => { /* ... */
-/* 
+array.map(callback(currentvalue,index,arr),thisArg) 
+
 You shouldn't be using map if:
 you're not using the array it returns; and/or
 you're not returning a value from the callback.
